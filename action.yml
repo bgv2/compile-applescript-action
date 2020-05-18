@@ -1,0 +1,15 @@
+name: 'Compile AppleScript'
+description: 'Compiles AppleScript using osacompile on macOS'
+branding:
+  icon: 'package'
+  color: 'purple'
+inputs:
+  infile:
+    description: 'Input file'
+    required: true
+  outfile:
+    description: 'Output file'
+    required: true
+runs:
+  using: 'node12'
+  main: 'index.js'
